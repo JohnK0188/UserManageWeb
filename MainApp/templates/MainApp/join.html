@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>회원가입 메인 페이지</title>
+    </head>
+    <body>
+        <h1>회원가입</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">가입</button>
+        </form>
+    </body>
+</html>
